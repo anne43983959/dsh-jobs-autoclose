@@ -1,0 +1,28 @@
+{
+  "name": "dsh-jobs-autoclose",
+  "version": "0.3.0",
+  "private": true,
+  "description": "DSH 插件：回合结束（agent idle）后盯着本条会话的后台任务与子代理；全部停完且该页面不是用户手动打开时，自动关掉「任务管理」页；用户碰过或发起新一轮则立即停止监听。纯客户端半负责决策，宿主半只提供一份能力自检报告。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    },
+    "compatibility": {
+      "runtime": ">=0.1.1-rc.1 <0.1.7"
+    }
+  },
+  "files": [
+    "lib"
+  ]
+}

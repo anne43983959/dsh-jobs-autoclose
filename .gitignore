@@ -1,0 +1,13 @@
+node_modules/
+.sandbox/
+*.log
+
+# 本机备份 / 临时留档：不进仓库
+*.bak-*
+*.bak
+
+# 离线自检的临时目录（运行时产物，含本机绝对路径）
+.smoke/.tmp/
+
+# 本机专属的源码定位说明
+SOURCE.local.md
